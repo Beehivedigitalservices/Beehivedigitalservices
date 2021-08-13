@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First webpage</title>
+<link rel="stylesheet" 
+href="styles.css">
+</head>
+<body>
+
+<div class="container">
+		<!-- all of our existing content goes here -->
+</div>
+
+<div class="intro">
+	<!-- content goes here -->
+</div>
+	
+<div>
+	<img 
+src="https://via.placeholder.com/150"
+/>
+	<h1>Bright Onobredefe</h1>
+	<h3>Web Developer At BeehiveDigitalServices</h3>
+	<p class="quote">
+	{{ pause and ponder}}
+</p>
+</div>
+
+<div class="about-grid">
+	<div class="i-am">
+		<h3>I am</h3>
+		<ul class="about-list">
+			<li>An engineer</li>
+			<li>A reader</li>
+			<li>A hobby cook</li>
+		</ul>
+	</div>
+<div class="i-like">
+	<h3>I like to</h3>
+	<ul clsss="about-list">
+		<li>Meet new people</li>
+		<li>Play guitar</li>
+		<li>Eat Icecream</li>
+	</ul>
+</div>
+
+</div>
+
+<div>
+	<h3 class="projects-heading">My Projects</h3>
+	<div class="projects-grid">
+		<img class="project-image"
+ src="https://via.placeholder.com/300"/>
+	<img class="project-image" src="https://via.placeholder.com/300"/>
+	<img class="project-image" src="https://via.placeholder.com/300"/>
+	<img class="project-image" src="https://via.placeholder.com/300"/>
+</div>
+
+<div class="links-and-contact">
+	<div class="links">
+	 <h3>Links</h3>
+	 <ul class="links-list">
+	 	<!-- content -->
+	 </ul>
+	</div>
+	<!-- contact form -->
+		<li>
+			<a href="https://facebook.com/<user">Facebook</a>
+		</li>
+		<li>
+			<a href="https://twitter.com/<user>">Twitter</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/<user>">Linkedin</a>
+				</li>
+			</ul>
+		</div>
+
+<div>
+<form action="#">
+        <label for="email">
+			Email: <input type="email" id="email" placeholder="Enter your email"/>
+		</label>
+		<label for="message"> Message:<textarea id="message"> Your Message</textarea>
+		</label>
+		<input type="submit" valid="Send message" />
+	</form>
+</div>
+</body>
+</html>
+
+
+
+h3 {
+	color:red;
+	font-weight: bold;
+}
+
+p {
+	font-style: italic;
+}
+
+.quote {
+	font-style: italic;
+	}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    }
+
+.intro {
+	text-align: center;
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+.about-grid {
+	display: grid;
+	text-align: center;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align: center;
+	text-decoration: none
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+.projects-grid {
+	text-align: center;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.project-image {
+	justify-self: center;
+	padding: 4%;
+}
+@media (max-width: 650x ) {
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.links-and-contact{
+	display: grid;
+	grid-auto-columns: 30% 70%
+}
+
+.links {
+	justify-self: center;
+}
+
+.links-list {
+	list-style: none;
+	padding: 0;
+}
+@media(max-width: 650px) {
+	.links-and-contact {
+		grid-template-columns: 100%;
+	}
+}
